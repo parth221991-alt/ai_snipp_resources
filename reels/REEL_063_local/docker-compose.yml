@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: local_ai_engine
+    runtime: nvidia
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HF_TOKEN}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    ipc: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    command: >
+      --model meta-llama/Llama-3.3-70B-Instruct-AWQ
+      --quantization awq
+      --port 8000
+      --gpu-memory-utilization 0.95
+      --max-model-len 8192
