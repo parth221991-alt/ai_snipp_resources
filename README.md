@@ -13,6 +13,9 @@ Official open-source repository for all blueprints, multi-agent boilerplates, co
 |---|---|---|---|
 | **REEL_061** | `SKILLS` | Top 5 High-Paying AI Skills Roadmap (2026 Developer Edition) | [View Roadmap](./reels/REEL_061_skills/) |
 | **REEL_062** | `SWARM` | 1-Click Multi-Agent Swarm Boilerplate & Architecture Guide | [View Boilerplate](./reels/REEL_062_swarm/) |
+| **REEL_063** | `LOCAL` | 1-Click Local AI Server Stack (Docker Compose + vLLM + AWQ Guide) | [View Stack](./reels/REEL_063_local/) |
+| **REEL_064** | `CONTEXT` | 3-Step Context Pipeline for AI Coding Assistants (Repo Digest & Interface Slicing) | [View Pipeline](./reels/REEL_064_context/) |
+
 
 ---
 
