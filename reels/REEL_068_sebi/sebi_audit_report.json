@@ -1,0 +1,53 @@
+{
+  "target": "D:\\AI_OS\\05_content\\_shared\\lead_magnets\\ai_snipp_resources\\reels\\REEL_068_sebi",
+  "score": 100,
+  "max_score": 100,
+  "status": "PASSED_COMPLIANT",
+  "audits": {
+    "SEBI-AI-01": {
+      "title": "Model Inventory & Algorithmic Disclosure",
+      "status": "PASS",
+      "points_awarded": 25,
+      "max_points": 25,
+      "notes": [
+        "Model disclosure registered: Found valid model_disclosure_template.json"
+      ]
+    },
+    "SEBI-AI-02": {
+      "title": "PII Protection & Hardcoded Secret Sanitation",
+      "status": "PASS",
+      "points_awarded": 20,
+      "max_points": 20,
+      "notes": [
+        "Zero hardcoded broker credentials or real Indian PANs detected in source code."
+      ]
+    },
+    "SEBI-AI-03": {
+      "title": "Human-in-the-Loop (HITL) Gate & Advisor Liability",
+      "status": "PASS",
+      "points_awarded": 20,
+      "max_points": 20,
+      "notes": [
+        "Human approval gate verified in execution logic / documentation."
+      ]
+    },
+    "SEBI-AI-04": {
+      "title": "Mandatory Statutory Risk Disclaimers",
+      "status": "PASS",
+      "points_awarded": 20,
+      "max_points": 20,
+      "notes": [
+        "Statutory risk disclaimers verified across project interfaces."
+      ]
+    },
+    "SEBI-AI-05": {
+      "title": "Immutable Decision & Prompt Audit Logging",
+      "status": "PASS",
+      "points_awarded": 15,
+      "max_points": 15,
+      "notes": [
+        "Structured event and prompt audit logging detected."
+      ]
+    }
+  }
+}

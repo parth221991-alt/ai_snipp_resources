@@ -15,6 +15,7 @@ Official open-source repository for all blueprints, multi-agent boilerplates, co
 | **REEL_062** | `SWARM` | 1-Click Multi-Agent Swarm Boilerplate & Architecture Guide | [View Boilerplate](./reels/REEL_062_swarm/) |
 | **REEL_063** | `LOCAL` | 1-Click Local AI Server Stack (Docker Compose + vLLM + AWQ Guide) | [View Stack](./reels/REEL_063_local/) |
 | **REEL_064** | `CONTEXT` | 3-Step Context Pipeline for AI Coding Assistants (Repo Digest & Interface Slicing) | [View Pipeline](./reels/REEL_064_context/) |
+| **REEL_068** | `SEBI` | SEBI AI Compliance Framework & Audit Toolkit (2026 FinTech Developer Edition) | [View Guide](./reels/REEL_068_sebi/) |
 
 
 ---

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "document_type": "SEBI_AI_MODEL_DISCLOSURE",
+  "version": "1.0.0",
+  "last_updated": "2026-09-04",
+  "entity": {
+    "entity_name": "YOUR_COMPANY_OR_DESK_NAME",
+    "registration_type": "RESEARCH_ANALYST",
+    "sebi_registration_number": "INH000000000",
+    "compliance_officer": {
+      "name": "Full Name",
+      "email": "compliance@yourdomain.com",
+      "phone": "+91-XXXXXXXXXX"
+    }
+  },
+  "model_inventory": [
+    {
+      "model_id": "PQD-ALPHA-V2",
+      "model_name": "Intraday Momentum & Liquidity Scorer",
+      "version": "2.4.1",
+      "deployment_date": "2026-06-15",
+      "vendor_type": "PROPRIETARY",
+      "underlying_architecture": "LightGBM + Deterministic Risk Filter",
+      "third_party_dependencies": [
+        "scikit-learn==1.5.0",
+        "numpy>=1.26.0"
+      ],
+      "primary_use_case": "Market research signal generation for NIFTY 50 and BANKNIFTY futures",
+      "input_features": [
+        "5-minute Order Book Imbalance (Top 5 depth)",
+        "Volume-Weighted Average Price (VWAP) Deviation",
+        "Historical Volatility (20-period percentile)"
+      ],
+      "output_classification": "RESEARCH_SIGNAL",
+      "human_in_the_loop": {
+        "required": true,
+        "approval_gate": "MANDATORY_OFFICER_SIGN_OFF",
+        "automated_execution_allowed": false,
+        "max_validity_window_seconds": 180
+      },
+      "risk_boundaries": {
+        "max_drawdown_stop_loss_pct": 1.5,
+        "max_daily_notional_exposure_inr": 2500000,
+        "kill_switch_trigger": "Excessive slippage (>0.25%) or 3 consecutive losing signals"
+      },
+      "data_privacy": {
+        "user_pii_ingested": false,
+        "anonymization_applied": true,
+        "data_retention_days": 1825,
+        "storage_location": "AWS ap-south-1 (Mumbai, India)"
+      }
+    }
+  ],
+  "disclaimer_acknowledgment": {
+    "prominently_displayed": true,
+    "text": "Investments in securities market are subject to market risks. Read all the related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors."
+  }
+}
