@@ -1,0 +1,109 @@
+{
+  "model": {
+    "name": "GPT-6 Astra",
+    "api_id": "gpt-6-astra",
+    "pro_tier_id": "gpt-6-astra-pro",
+    "vendor": "OpenAI",
+    "announced": "2026-09-03",
+    "predecessor": "GPT-5.6 Sol",
+    "positioning": "Generational leap in agentic computer use; OpenAI leadership framed it as the start of the 'AGI era'."
+  },
+  "claim_legend": {
+    "openai_claim": "Stated by OpenAI (marketing or system card); not independently verified at launch.",
+    "reported": "Reported by multiple outlets covering the launch.",
+    "commentary": "Analysis / opinion, not a sourced fact."
+  },
+  "capabilities": {
+    "headline": "State-of-the-art computer use — operates apps and browsers like a human and completes multi-step tasks.",
+    "computer_use_speed_vs_sol": "~2x faster (openai_claim)",
+    "examples": [
+      "Form completion and CRM record updates",
+      "Spreadsheet manipulation and data analysis",
+      "Calendar organisation and multi-site web research",
+      "Python notebook work, Power BI",
+      "Website creation and testing",
+      "CAD tools (KiCad, FreeCAD)",
+      "Software install and troubleshooting",
+      "Document and presentation generation"
+    ],
+    "reasoning": "Reported to have helped solve long-standing open problems in mathematics (openai_claim).",
+    "codex_change": "Keeps notes across context windows instead of compressing sessions into lossy summaries."
+  },
+  "benchmarks": {
+    "note": "Headline figures are OpenAI's rounded marketing numbers. Detailed table values differ. Methodology and harness vary by vendor.",
+    "headline": {
+      "ExploitBench": "100%",
+      "FrontierMath_Tier4": "~98%",
+      "ARC_AGI_3": "~99.9%",
+      "GPQA_Diamond": "~96%",
+      "BenchCAD": "~95.9%",
+      "DeepSWE_v1_1": "~74.1%"
+    },
+    "detailed_table_reported": {
+      "ARC_AGI_3": "98.6%",
+      "FrontierMath_Tier4_v2": "97.6%",
+      "OSWorld_2_0_offline_subset": "72.6% at ~40 min/task vs GPT-5.6 Sol 65.7% at ~75 min/task"
+    },
+    "caveats": [
+      "ARC-AGI-3 ~99.9% relies on an expensive stateful agent harness (Responses API loop); stateless API scores are much lower.",
+      "'Saturates' means the benchmark is exhausted, not that the capability is complete.",
+      "GDPval (OpenAI's 1,320-task real-world economic-work benchmark) was NOT published at launch.",
+      "Astra uses fewer reasoning tokens and 'opaque recurrence', reducing chain-of-thought monitorability."
+    ]
+  },
+  "safety": {
+    "preparedness_framework": "First model designated at the 'Critical' cybersecurity threshold.",
+    "critical_meaning": "Can identify previously unknown vulnerabilities without continuous human guidance.",
+    "eval_findings": "Reportedly discovered 2 previously unknown vulnerabilities during evaluation.",
+    "incident_context": "OpenAI added safeguards after a Hugging Face breach during the run-up to release.",
+    "advanced_cyber_access": "Gated behind the Daybreak program (approved orgs only).",
+    "alignment_metric": {
+      "exceeding_authorized_scope": {"gpt_6_astra": "0%", "gpt_5_6_sol": "48.2%"}
+    },
+    "leadership_quotes": {
+      "greg_brockman": "Welcome to the AGI era / I do think we're there",
+      "jakub_pachocki": "Progress in intelligence does not guarantee progress in alignment"
+    }
+  },
+  "access": {
+    "free_tier": false,
+    "chatgpt_plans": ["Plus", "Pro", "Business", "Enterprise"],
+    "pro_variant_plans": ["Pro", "Business", "Enterprise"],
+    "enterprise_default": "off (admin must enable per workspace)",
+    "api": "gpt-6-astra",
+    "cloud_marketplaces": ["AWS Bedrock", "Microsoft Azure"],
+    "rollout_timing": "Limited orgs at launch; broader ChatGPT + API + cloud 'over the coming days'.",
+    "daybreak_program": "Live for approved orgs (advanced cyber features)."
+  },
+  "pricing_usd_per_1m_tokens": {
+    "standard": {"input": 10.0, "output": 50.0},
+    "fast": {"input": 20.0, "output": 100.0},
+    "context": "Standard rate is roughly 10x typical mid-tier model pricing. A 200K-in / 50K-out run costs ~$4.50 standard."
+  },
+  "training": {
+    "scale_claim": "OpenAI's largest training run to date (openai_claim).",
+    "infra": "First model pretrained using >100,000 DBUs on Stargate infrastructure.",
+    "supervision": "Previous OpenAI models played major supervisory roles in training."
+  },
+  "open_questions": [
+    "GDPval results not published",
+    "Context window size not clearly stated",
+    "Independent computer-use reliability at scale unverified",
+    "Full API pricing for gpt-6-astra-pro unconfirmed",
+    "API rate limits / availability SLAs unknown"
+  ],
+  "sources_compiled": "2026-09-03 to 2026-09-04",
+  "sources": [
+    "OpenAI - GPT-6 Astra: A new generation of intelligence",
+    "OpenAI - Path to Astra: critical capabilities and frontier safeguards",
+    "Reuters / CNBC - OpenAI announces rollout of GPT-6 Astra model",
+    "Axios - OpenAI releases new model GPT-6 Astra, says it may represent AGI",
+    "VentureBeat - 'Welcome to the AGI era': OpenAI launches GPT-6 Astra",
+    "The Verge / TechCrunch - OpenAI launches Astra, its powerful (and controversial) new model",
+    "Bloomberg - OpenAI Rolls Out GPT-6 Astra Model With Added Cyber Guardrails",
+    "NBC News - OpenAI debuts GPT-6 Astra, says it triggered security measures",
+    "Fortune - OpenAI debuts GPT-6 Astra, computer use, Brockman on AGI",
+    "9to5Google / 9to5Mac - rollout details, Codex note, computer-use speed"
+  ],
+  "disclaimer": "Figures reflect the state at launch (3-4 Sep 2026) and will change. Re-verify against OpenAI documentation before making commitments."
+}
