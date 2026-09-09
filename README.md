@@ -17,6 +17,8 @@ Official open-source repository for all blueprints, multi-agent boilerplates, co
 | **REEL_064** | `CONTEXT` | 3-Step Context Pipeline for AI Coding Assistants (Repo Digest & Interface Slicing) | [View Pipeline](./reels/REEL_064_context/) |
 | **REEL_068** | `SEBI` | SEBI AI Compliance Framework & Audit Toolkit (2026 FinTech Developer Edition) | [View Guide](./reels/REEL_068_sebi/) |
 | **REEL_069** | `ASTRA` | GPT-6 Astra — Complete Developer Briefing (capabilities, benchmarks + caveats, pricing, safety) | [View Briefing](./reels/REEL_069_astra/) |
+| **REEL_070** | `AIOS` | Private AI_OS — Developer & Founder Starter Pack (9-folder memory, CLAUDE.md, swarm init CLI) | [View Pack](./reels/REEL_070_ai_os/) |
+| **REEL_075** | `BRIEF` | The NotebookLM Briefing System — 4-step research-to-briefing workflow, grounding prompts, source-manifest script | [View System](./reels/REEL_075_notebooklm/) |
 
 
 ---
