@@ -11,6 +11,7 @@ Official open-source repository for all blueprints, multi-agent boilerplates, co
 
 | Reel ID | Trigger Keyword | Resource Title | Link |
 |---|---|---|---|
+| **REEL_129** | `QLIB` | Microsoft open-sourced an AI quant lab. 50K stars on GitHub. | [Open](./reels/reel_129_qlib/) |
 | **REEL_061** | `SKILLS` | Top 5 High-Paying AI Skills Roadmap (2026 Developer Edition) | [View Roadmap](./reels/REEL_061_skills/) |
 | **REEL_062** | `SWARM` | 1-Click Multi-Agent Swarm Boilerplate & Architecture Guide | [View Boilerplate](./reels/REEL_062_swarm/) |
 | **REEL_063** | `LOCAL` | 1-Click Local AI Server Stack (Docker Compose + vLLM + AWQ Guide) | [View Stack](./reels/REEL_063_local/) |
